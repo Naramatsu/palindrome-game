@@ -1,0 +1,90 @@
+.section-game {
+  margin: 2em 10%;
+  padding: 1em;
+  min-width: 300px;
+
+  .actual-score {
+    border: solid 1px #000;
+    border-bottom: none;
+    width: max-content;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+
+    h3 {
+      padding: 0.5em;
+      margin-bottom: 5px;
+      background-color: #283747;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+      text-shadow: 0 0 4px #000;
+      margin: 0;
+    }
+
+    p {
+      padding: 0.5em;
+    }
+  }
+
+  .section-form {
+    border: solid 1px #000;
+    border-radius: 0px 10px 10px 10px;
+
+    .label {
+      font-size: 10px;
+      padding: 2px 2em;
+      margin-top: 1em;
+
+      &.msg {
+        margin-top: 0;
+        color: red;
+      }
+    }
+
+    .form {
+      margin: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        width: 100px;
+        padding: 1em 0.5em;
+        background-color: #283747;
+        color: #fff;
+        font-weight: bold;
+        border: solid 1px #000;
+        border-left: none;
+        border-radius: 0 10px 10px 0;
+        min-height: 30px;
+      }
+
+      input {
+        border: solid 1px;
+        max-height: 30px;
+        width: calc(100% - 120px);
+        padding: 1em;
+        border-radius: 10px 0 0 10px;
+
+        &.error {
+          border-color: red;
+          color: red;
+        }
+      }
+    }
+
+    .palindromes-table {
+      text-align: center;
+      margin: 1em auto;
+
+      p {
+        padding: 0.5em;
+        border-bottom: solid 1px;
+        margin: 0 2em;
+
+        &:nth-last-child(1) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
